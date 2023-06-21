@@ -19,8 +19,8 @@
   <!-- sidebar -->
   <div class="w3-sidebar w3-teal w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
     <button class="w3-bar-item w3-button w3-xlarge w3-animate-left" onclick="w3_close()">Close &times;</button>
-    <a href="notification.html" class="w3-bar-item w3-button">Notification</a>
-    <a href="cbse.html" class="w3-bar-item w3-button">Cbse</a>
+    <a href="#" class="w3-bar-item w3-button">MCQs</a>
+    <a href="#" class="w3-bar-item w3-button">Notes</a>
     <a href="#scroller" class="w3-bar-item w3-button">More Stuff</a>
     <a href="#accordion" class="w3-bar-item w3-button">Help</a>
   </div>
@@ -55,14 +55,14 @@
           <li><img src="res/light.png" alt="lightmodeon" class="light" /></li>
           <li><img src="res/dark.png" alt="darkmodeon" class="dark" /></li>
           <li class="pro" onclick="alert('Pro Mode Is Locked Now')">Pro</li>
-          <li class="one">MCQ</li>
-          <li class="two">Notes</li>
+          <li class="one" onclick="window.open('cbse.html', '_self')">CBSE</li>
+          <li class="two" onclick="window.open('notification.html', '_self')">Notification</li>
           <li class="three" id="name">NSM</li>
         </ul>
       </div>
     </div>
 
-    <section class="main">
+    <section class="main" onclick="closeNav()">
       <div class="content">
         <span class="main-text">Learn To Win</span>
         <p class="low-text"></p>
@@ -78,12 +78,12 @@
         <span class="class">SIXTH</span>
         <p>Impossible is for the unwilling</p>
         <ul>
-          <li class="one" onclick="window.open('6-books.html','_self')">Ncert Solution</li>
+          <li class="one" onclick="window.open('6-books.html','_self')">Book Solution</li>
           <a href="#">
-            <li class="two">Video Tutorial</li>
+            <li class="two">Chapter Notes</li>
           </a>
           <a href="#">
-            <li class="three">Sample Paper</li>
+            <li class="three">Chapter MCQs</li>
           </a>
           <a href="#">
             <li class="four">Summary</li>
@@ -100,12 +100,12 @@
         <span class="class">SEVENTH</span>
         <p>Either you run the day or the day runs you</p>
         <ul>
-          <li class="one" onclick="window.open('7-books.html','_self')">Ncert Solution</li>
+          <li class="one" onclick="window.open('7-books.html','_self')">Book Solution</li>
           <a href="#">
-            <li class="two">Video Tutorial</li>
+            <li class="two">Chapter Notes</li>
           </a>
           <a href="#">
-            <li class="three">Sample Paper</li>
+            <li class="three">Chapter MCQs</li>
           </a>
           <a href="#">
             <li class="four">Summary</li>
@@ -122,12 +122,12 @@
         <span class="sp-e">EIGHTH</span>
         <p class="p-e">Dream big and dare to fail</p>
         <ul>
-          <li class="one" onclick="window.open('8-books.html','_self')">Ncert Solution</li>
+          <li class="one" onclick="window.open('8-books.html','_self')">Book Solution</li>
           <a href="#">
-            <li class="two">Video Tutorial</li>
+            <li class="two">Chapter Notes</li>
           </a>
           <a href="#">
-            <li class="three">Sample Paper</li>
+            <li class="three">Chapter MCQs</li>
           </a>
           <a href="#">
             <li class="four">Summary</li>
@@ -146,10 +146,10 @@
         <ul>
           <li class="one" onclick="window.open('9-books.html','_self')">Ncert Solution</li>
           <a href="#">
-            <li class="two">Video Tutorial</li>
+            <li class="two">Chapter Notes</li>
           </a>
           <a href="#">
-            <li class="three">Sample Paper</li>
+            <li class="three">Chapter MCQs</li>
           </a>
           <a href="#">
             <li class="four">Summary</li>
@@ -168,7 +168,7 @@
         <ul>
           <li class="one" onclick="window.open('10-books.html','_self')">Ncert Solution</li>
           <a href="#">
-            <li class="two">Video Tutorial</li>
+            <li class="two">Chapter Notes</li>
           </a>
           <a href="#">
             <li class="three">P.Y.Q Download</li>
@@ -189,10 +189,10 @@
         <ul>
           <li class="one" onclick="window.open('11-stream.html','_self')">Ncert Solution</li>
           <a href="#">
-            <li class="two">Video Tutorial</li>
+            <li class="two">Chapter Notes</li>
           </a>
           <a href="#">
-            <li class="three">Sample Paper</li>
+            <li class="three">Question Bank</li>
           </a>
           <a href="#">
             <li class="four">Summary</li>
@@ -211,7 +211,7 @@
         <ul>
           <li class="one" onclick="window.open('12-stream.html','_self')">Ncert Solution</li>
           <a href="#">
-            <li class="two">Video Tutorial</li>
+            <li class="two">Chapter Notes</li>
           </a>
           <a href="#">
             <li class="three">P.Y.Q Download</li>
@@ -300,8 +300,8 @@
 
         <button class="accordion">How do I get sample paper of CBSE board exams?</button>
         <div class="panel">
-          <p><a href="#scroller">Click Here</a> and check question bank section where there is a slot for board exam's
-            sample paper. After selcting your class you can access it.</p>
+          <p><a href="#scroller" style="font-weight: 600;">Click Here</a> and check question bank section where there is a slot for board exam's
+            sample paper. After selecting your class you can access it.</p>
         </div>
 
         <button class="accordion">How can I get NCERT book chapter's summary?</button>
@@ -321,8 +321,8 @@
 
         <button class="accordion">What stuff do AirSchools have?</button>
         <div class="panel">
-          <p>AirSchools provide so many content for students that actually help them. Few of them are listed here: Ncert
-            book solutions, Previous year questions, Sample papers, Question bank, Notes, MCQs for each chapter, Summary
+          <p>AirSchools provide so many content for students that actually help them. Few of them are listed here: Out Of 100, 80% <span style="font-weight: 600;">AI Generated</span> Answers  Of Ncert
+            Book, Previous year questions, Sample papers, Question bank, Notes, MCQs for each chapter, Summary
             and special content for board classes.</p>
         </div>
 
@@ -703,7 +703,7 @@
   }
 
   /*An array containing all the country names in the world:*/
-  var countries = ["Class Sixth", "Class Seventh", "Class Eighth", "Class Ninth", "Class Tenth", "Class Eleventh", "Class Twelfth", "NCERT Solution", "CBSE Updates", "AirSchools Notifications", "Previous Year Questions", "Chapters Summary"];
+  var countries = ["NCERT Solution", "CBSE Updates", "AirSchools Notifications", "Previous Year Questions", "Chapters Summary", "Question Bank", "Notes", "MCQs", "Essays", "Letters", "Sample Paper"];
 
   /*initiate the autocomplete function on the "searchbox" element, and pass along the countries array as possible autocomplete values:*/
   autocomplete(document.getElementById("searchbox"), countries);
@@ -814,5 +814,17 @@
     // var greeting = savedName + " is not valid name";
     // document.getElementById('greeting').textContent = greeting;
   }
+
+</script>
+
+<script>
+
+function closeNav(){
+  var nav = document.getElementsByClassName('navlinks-r');
+if (nav.length > 0) {
+  nav[0].style.display = 'none';
+}
+
+}
 
 </script>
