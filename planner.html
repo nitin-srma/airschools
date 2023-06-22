@@ -155,7 +155,7 @@
       }
   
       .main .task-input{
-        font-size: 40px;
+        font-size: 45px;
         height: 70px;
         margin-top: 50px;
         width: 550px;
@@ -169,7 +169,12 @@
         right: -100px;
         padding: 15px;
       }
+
+    .edit-input {
+      font-size: 40px;
+      height: 30px;
     }
+  }
   </style>
 </head>
 <body>
@@ -199,9 +204,9 @@
         const li = document.createElement('li');
         li.innerHTML = `
           <input class="edit-input" type="text" value="${task}" disabled>
-          <span class="remove-button" onclick="removeTask(${index})"><i class="fas fa-times" style="color:  #fff; margin-left: 10px; background-color: red; padding: 5px; border-radius: 100%;"></i></span>
-          <span class="edit-button" onclick="editTask(${index})"><i class="fas fa-pencil-alt" style="color: #fff; margin-left: 10px; background-color: #8146ee; padding: 5px; border-radius: 100%;"></i></span>
-          <span class="save-button" onclick="saveTask(${index})"><i class="fas fa-save" style="color: #fff; margin-left: 10px; background-color: #04AA6D; padding: 5px; border-radius: 100%;"></i></span>
+          <span class="remove-button" onclick="removeTask(${index})"><i class="fas fa-times" style="color:  #fff; margin-left: 20px; background-color: red; padding: 10px; border-radius: 100%;"></i></span>
+          <span class="edit-button" onclick="editTask(${index})"><i class="fas fa-pencil-alt" style="color: #fff; margin-left: 15px; background-color: #8146ee; padding: 10px; border-radius: 100%;"></i></span>
+          <span class="save-button" onclick="saveTask(${index})"><i class="fas fa-save" style="color: #fff; margin-left: 15px; background-color: #04AA6D; padding: 10px; border-radius: 100%;"></i></span>
         `;
         taskList.appendChild(li);
         li.style.marginLeft = '50px';
